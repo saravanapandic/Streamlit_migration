@@ -142,6 +142,8 @@ with tab2:
     else:
         st.write("We are currently making progress with Streamlit, but we have a fully completed solution for the application available in a Docker container. If you need access to this container, please connect with us. The container is provided as an entirely free resource, ensuring ease of access and implementation.")
     
-
+        
+with tab3:
+    st.write('V_0.0.1 - 29/07/2024') 
 
 
