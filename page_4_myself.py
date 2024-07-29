@@ -19,4 +19,4 @@ You can connect with me via LinkedIn messaging or email me at csaravanakd@gmail.
 Thank you for visiting my application! Please note that this is not the final version; it's a work in progress, and the basic version is currently available on Streamlit.'''
 st.write(a)
 
-st.link_button('linkedin','www.linkedin.com/in/saravana-pandi-9a9662198')
+st.link_button('linkedin','https://www.linkedin.com/in/saravana-pandi-9a9662198/')
