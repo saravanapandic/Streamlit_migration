@@ -136,7 +136,7 @@ with tab2:
                     pointer_target_snowflake_account.restructure_sql_file(file_path,file_path,view_file)
                     pointer_target_snowflake_account.env_set_target()
                     put_command = f"PUT file://{file_path} {snowflake_stage} AUTO_COMPRESS=FALSE"
-                    EXECUTE_COMMAND='EXECUTE IMMEDIATE FROM @Streamlit_migrated.PUBLIC.INTERNAL_DDL/output.sql'
+                    EXECUTE_COMMAND='EXECUTE IMMEDIATE FROM @Streamlit_migrated.PUBLIC.INTERNAL_DDL/streamlit_migration\snowflake_function\ddl_file\output.sql'
                     pointer_target_snowflake_account.Target_execute(put_command)
                     pointer_target_snowflake_account.Target_execute(EXECUTE_COMMAND)
                     pointer_target_snowflake_account.drop_env_set_target()
