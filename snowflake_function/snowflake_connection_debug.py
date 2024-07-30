@@ -13,7 +13,7 @@ class snowflake_connection:
         self.username=username
         self.password=password
         self.warehouse=warehouse
-        self.role=role
+        self.role=role 
     def connection_debug(self):
         try:
             conn = snowflake.connector.connect(
