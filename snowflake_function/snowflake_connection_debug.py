@@ -8,7 +8,7 @@ import re
 
 
 class snowflake_connection:
-    def __init__(self,accountname,username,password,warehouse) -> None:
+    def __init__(self,accountname,username,password,warehouse,role) -> None:
         self.accountname=accountname
         self.username=username
         self.password=password
