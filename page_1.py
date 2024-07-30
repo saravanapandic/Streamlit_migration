@@ -33,7 +33,7 @@ with tab1:
         source_account.text_input('snowflake password:',key='snowflake_password_source', type="password")
         source_account.text_input('snowflake warehouse:',key='snowflake_warehouse_source')
         source_account.text_input('snowflake role:',key='snowflake_role_source')
-        pointer_source_snowflake_account=sfconnectiondebug(st.session_state['snowflake_account_source'],st.session_state['snowflake_username_source'],st.session_state['snowflake_password_source'],st.session_state['snowflake_warehouse_source'])
+        pointer_source_snowflake_account=sfconnectiondebug(st.session_state['snowflake_account_source'],st.session_state['snowflake_username_source'],st.session_state['snowflake_password_source'],st.session_state['snowflake_warehouse_source'],st.session_state['snowflake_role_source'])
         status_source_account=source_account.form_submit_button('Debug',on_click=snowflake_connection_debug(pointer_source_snowflake_account))
     
          
@@ -46,7 +46,7 @@ with tab1:
         target_account.text_input('snowflake password:',key='snowflake_password_target', type="password")
         target_account.text_input('snowflake warehouse:',key='snowflake_warehouse_target')
         target_account.text_input('snowflake role:',key='snowflake_role_target')
-        pointer_target_snowflake_account=sfconnectiondebug(st.session_state['snowflake_account_target'],st.session_state['snowflake_username_target'],st.session_state['snowflake_password_target'],st.session_state['snowflake_warehouse_target'])
+        pointer_target_snowflake_account=sfconnectiondebug(st.session_state['snowflake_account_target'],st.session_state['snowflake_username_target'],st.session_state['snowflake_password_target'],st.session_state['snowflake_warehouse_target'],st.session_state['snowflake_role_target'])
         status_target_account=target_account.form_submit_button('Debug',on_click=snowflake_connection_debug(pointer_target_snowflake_account))
     if (st.session_state.connection_count ==2):
         st.success('all connection success(source and target)')
